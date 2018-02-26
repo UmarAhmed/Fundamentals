@@ -55,17 +55,18 @@ def bubble_sort(a):
     return a
 
 
-# O(n^2) finds max on each pass, and performs n passes
+# O(n^2) finds min on each pass, and performs n passes
 def selection_sort(a):
     return [min(a[:len(a)-i]) for i in range(len(a))]
 
 
 def test(f):
     t1 = list(range(100, 0, -1))
-    if f(t1) == list(range(1, 101)):
+    t2 = list(range(50, 0, -1)) + list(range(100, 50, -1))
+    a1 = list(range(1, 101))
+    if f(t1) == a1 and f(t2) == a1:
         print("All tests passed\n")
     else:
-        print("Not nice\n")
+        print("Something's not right!\n")
 
 
-test(qsort)
