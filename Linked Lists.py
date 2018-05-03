@@ -182,7 +182,7 @@ def find_merge_node(head_a, head_b):
         if head_a.next is None:
             head_a = head_b
             a += 1
-        if head_a.next is None:
+        if head_b.next is None:
             head_b = head_a
             b += 1
         else:
