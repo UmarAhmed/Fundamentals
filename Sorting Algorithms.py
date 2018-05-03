@@ -1,4 +1,4 @@
-# O(1) space, O(n log(n))
+# Space: O(n), O(n log(n))
 def quick_sort(a):
     if len(a) <= 1:
         return a
